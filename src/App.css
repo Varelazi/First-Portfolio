@@ -1,0 +1,38 @@
+/* NAVBAR CSS */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.name{
+  margin-left: 5%;
+  align-content: center;
+}
+
+.linkbox{
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+  margin-right: 5%;
+}
+
+.navlink{
+  border: solid;
+  border-radius: 50px;
+  display: inline;
+  padding: 10px;
+}
+
+/* ABOUT ME CSS */
+.aboutMe{
+  background-image: url("./assets/cloudPainting.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  top: 0;
+}
