@@ -10,13 +10,21 @@ import CssLogo from "./assets/css.png"
 import RubyLogo from "./assets/ruby.png"
 import GithubLogo from "./assets/github.png"
 import RailsLogo from "./assets/rails.png"
+import PhotoMe from "./assets/photoMe.png"
 
 function App() {
   return (
     <>
       <NavBar />
+      <div className="landing">
+        <div className="container">
+          <p className="first">Ilene</p>
+          <img src={PhotoMe} alt="Ilene Varela-Zul" className="me"/>
+          <p className="last">Varela-Zul</p>
+        </div>
+      </div>
       <div className="aboutMe">
-        <div className="frame-container">
+        <div className="frame1-container">
           <img src={AboutBorder} className="about-frame"/>
           <div className="about-container">
             <div className="about-text">
