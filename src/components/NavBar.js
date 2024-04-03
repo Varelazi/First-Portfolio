@@ -1,20 +1,16 @@
 import React from "react"
+import logo from "../assets/iv.png"
 
-function NavBar () {
+const NavBar = ()  => {
     return (
-        <>
-            <div className="navbar">
-                <div className="title-container">
-                    <h2 className="name"> Ilene Varela-Zul </h2>
-                    <p className="title">Front-End Software Developer</p>
-                </div>
-                <div className="linkbox">
-                    <h5 className="navlink">About Me</h5>
-                    <h5 className="navlink">Projects</h5>
-                    <h5 className="navlink">Contact Me</h5>
-                </div>
+        <div className="nav">
+            <img src={logo} alt="Ilene Varela-Zul Logo" className="logo"/>
+            <div className="links-box">
+                <p className="links">Work</p>
+                <p className="links">About Me</p>
+                <p className="links">Contact</p>
             </div>
-        </>
+        </div>
     )
 }
 
