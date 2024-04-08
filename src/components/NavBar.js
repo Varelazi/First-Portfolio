@@ -1,21 +1,30 @@
-import React from "react"
+import React, { useState } from "react";
+import logo from "../assets/iv.png";
+import { Link } from "react-router-dom";
 
-function NavBar () {
-    return (
-        <>
-            <div className="navbar">
-                <div className="title-container">
-                    <h2 className="name"> Ilene Varela-Zul </h2>
-                    <p className="title">Front-End Software Developer</p>
-                </div>
-                <div className="linkbox">
-                    <h5 className="navlink">About Me</h5>
-                    <h5 className="navlink">Projects</h5>
-                    <h5 className="navlink">Contact Me</h5>
-                </div>
-            </div>
-        </>
-    )
-}
+const NavBar = () => {
+  const [activeLink, setActiveLink] = useState("/");
 
-export default NavBar
+  const handleSetActiveLink = (path) => {
+    setActiveLink(path);
+  };
+
+  return (
+    <div className="nav">
+      <img src={logo} alt="Ilene Varela-Zul Logo" className="logo" />
+      <div className="links-box">
+        <Link to="/" className={activeLink === "/" ? "active-link linkto-w" : "linkto-w"} onClick={() => handleSetActiveLink("/")}>
+          <p className="links">Work</p>
+        </Link>
+        <Link to="/AboutMe" className={activeLink === "/AboutMe" ? "active-link linkto-a" : "linkto-a"} onClick={() => handleSetActiveLink("/AboutMe")}>
+          <p className="links">About Me</p>
+        </Link>
+        <Link to="/ContactMe" className={activeLink === "/ContactMe" ? "active-link linkto-c" : "linkto-c"} onClick={() => handleSetActiveLink("/ContactMe")}>
+          <p className="links">Contact</p>
+        </Link>
+      </div>
+    </div>
+  );
+};
+
+export default NavBar;

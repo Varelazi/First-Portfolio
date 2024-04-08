@@ -1,148 +1,151 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Gruppo&family=Ojuju:wght@200..800&family=Pacifico&display=swap');
+
+html{
+  background-color: #F9F6EE;
+}
 
 /* NAVBAR CSS */
-.navbar{
+.nav {
   display: flex;
   justify-content: space-between;
-  position: fixed;
-  width: 100%;
+  align-items: center;
+  padding: 4px;
   top: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.5)
 }
 
-.title-container{
-  margin-left: 5%;
-  width: 20%;
-  display: block;
-}
-
-.name{
-  margin-top: 6%;
-  align-content: center;
-}
-
-.title{
-  margin-top: -20px;
+.logo {
+  height: 50px;
   margin-left: 10%;
 }
 
-.linkbox{
+.links-box {
   display: flex;
   width: 20%;
+  justify-content: space-evenly;
+  margin-right: 10%;
+}
+
+.links {
+  padding: 5px;
+  font-size: 20px;
+  color: black;
+  font-family: "Gruppo", sans-serif;
+  font-weight: 600;
+}
+
+.linkto-w, .linkto-a, .linkto-c {
+  text-decoration: none;
+}
+
+.linkto-w.active-link p,
+.linkto-a.active-link p,
+.linkto-c.active-link p{
+  border: solid #FEC5BB;
+}
+
+/* FOOTER CONTAINER */
+.footer-container{
+  height: 10vh;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.footer-name{
+  margin-left: 5%;
+  font-family: "Gruppo", sans-serif;
+  font-size: large;
+}
+
+.socials{
+  display: flex;
   margin-right: 5%;
+  font-family: "Gruppo", sans-serif;
 }
 
-.navlink{
-  border: solid;
-  border-radius: 50px;
-  display: inline;
-  padding: 10px;
+.linkedin-a, .github-a{
+  text-decoration: none;
+  color: black;
 }
 
-/* LANDING CSS */
-.landing{
-  height: 100vh;
-  background-image: url("./assets/cloudPainting.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+.linkedin-a:hover, .github-a:hover{
+  font-weight: 700;
+}
+
+.linkedin, .github{
+  padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: large;
+}
+
+/* MAIN PAGE CSS */
+.work{
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-}
-
-.container{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 80%;
-  flex-wrap: wrap;
-}
-
-.first{
-  display: flex;
-  align-items: center;
-  font-size: 120px;
-  font-family: 'Dancing Script';
-}
-
-.me{
-  height: 500px;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.last{
-  display: flex;
-  align-items: center;
-  font-size: 120px;
-  font-family: 'Dancing Script';
-}
-
-/* ABOUT ME CSS */
-.aboutMe {
-  background-image: url("");
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.frame1-container {
-  height: 80%;
-  width: 80%;
-}
-
-.about-frame {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.7);
-  position: relative;
-}
-
-.about-container {
-  width: 66%;
-  height: 500px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
-  display: flex;
   flex-wrap: wrap-reverse;
 }
 
-.about-text{
+.container{
   width: 50%;
-  margin: auto;
-  text-align: center;
 }
 
-.greeting{
+.hello {
+  display: inline;
+  font-size: 45px;
+  margin-bottom: 10px;
+  font-family: "Pacifico", cursive;
+  color: #FEC5BB;
+}
+
+.text {
+  font-size: 20px;
+  margin-bottom: 10px; 
+  font-family: "Gruppo", sans-serif;
+  font-weight: 600;
+  width: 80%;
   letter-spacing: 2px;
 }
 
-.intro{
-  letter-spacing: 5px;
+.me{
+  height: 450px;
 }
 
-.skills{
+.work1{
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.logo{
-  height: 40px;
-  padding: 5px;
-  margin-left: 3px;
-  margin-right: 3px;
+.ratiemate-container{
+  margin-top: 5%;
+  height: 80vh;
+  width: 75%;
+  background-color: #FFD7BA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  margin-bottom: 5%;
 }
 
-.about-image{
-  height: 350px;
-  margin: auto;
+.work2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cookbook-container{
+  margin-top: 5%;
+  height: 80vh;
+  width: 75%;
+  background-color: #FCD5CE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  margin-bottom: 5%;
 }
