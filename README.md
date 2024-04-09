@@ -24,21 +24,36 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+```
+- Make sure that in the App.js the navigations should include
+```js
+import { Routes, Route } from "react-router-dom"
 
+function App() {
+  return(
+    <>
+      <Routes>
+        <Route path="/pathName" element={<Component />}>
+      </Routes>
+    <>
+  )
+}
 ```
 
 ## Navbar
-- Included job title in the navbar to showcase to user what I do
-- Keeping the opacity background because it helps the user read more clearly
+- Have a logo of my initials, main IV
+- Work, About, and Contact me sections for the user to navigate my work, who I am, and a contact me page so others can send me an email. 
 
-## Landing Page
-- Created landing page to showcase my name and me.
-- Includes WHO I am as a person
+## Footer
+- All pages will include a footer of the project title (Portfolio) with my name to show that I created it. 
+- Also include links to LinkedIn and Github
 
-## About Me
-- About me has information about who I am as a software developer. 
-- Includes my skills
-- My job for software development
-- Another photo of me
+## Work/Landing Page
+- Includes small intro to who I am as a person in tech and image.
+- Includes my projects 
 
-## Projects
+## About Me Page
+- Section to showcase my background and testimonies
+
+## Contaact Page
+- A page where the user can send me an email from a form on the page. 
