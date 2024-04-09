@@ -17,7 +17,7 @@ const NavBar = () => {
           <p className="links">Work</p>
         </Link>
         <Link to="/AboutMe" className={activeLink === "/AboutMe" ? "active-link linkto-a" : "linkto-a"} onClick={() => handleSetActiveLink("/AboutMe")}>
-          <p className="links">About Me</p>
+          <p className="links">About</p>
         </Link>
         <Link to="/ContactMe" className={activeLink === "/ContactMe" ? "active-link linkto-c" : "linkto-c"} onClick={() => handleSetActiveLink("/ContactMe")}>
           <p className="links">Contact</p>

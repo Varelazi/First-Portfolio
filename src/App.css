@@ -98,7 +98,7 @@ html{
   font-size: 45px;
   margin-bottom: 10px;
   font-family: "Pacifico", cursive;
-  color: #FEC5BB;
+  color: #B3C6B9;
 }
 
 .text {
@@ -149,3 +149,115 @@ html{
   border: solid;
   margin-bottom: 5%;
 }
+
+/* ABOUT ME CSS */
+.about-me{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2%;
+  flex-wrap: wrap-reverse;
+}
+
+.about-textbox{
+  width: 45%;
+}
+
+.text1{
+  font-family: "Gruppo", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.about-img{
+  height: 500px;
+}
+
+.skills-title{
+  display: flex;
+  font-size: 45px;
+  margin-bottom: 10px;
+  font-family: "Pacifico", cursive;
+  color: #B3C6B9;
+  justify-content: center;
+}
+
+.skill-box{
+  display: flex;
+  justify-content: center;
+}
+
+.skills-logo{
+  height: 60px;
+  padding: 10px;
+}
+
+.test-title{
+  display: flex;
+  font-size: 45px;
+  margin-bottom: 10px;
+  font-family: "Pacifico", cursive;
+  color: #B3C6B9;
+  justify-content: center;
+}
+
+.testimonials {
+  position: relative; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  height: 250px;
+  overflow: scroll;
+}
+
+.test1,
+.test2 {
+  position: absolute;
+  font-size: 20px;
+  letter-spacing: 2px;
+  width: 60%;
+  padding: 20px;
+}
+
+.test1, .test-name{
+  background-color: #D8E2DC;
+}
+
+.test2, .test-name1{
+  background-color: #FFE5D9;
+}
+
+.test-name, .test-name1{
+  position: absolute;
+  top: 0;
+  padding: 5px;
+}
+
+.bottom-buttons{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.button{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-family: "Gruppo", sans-serif;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: #FCD5CE;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.button:hover{
+  background-color: transparent;
+  border: solid #FCD5CE;
+}
+
+

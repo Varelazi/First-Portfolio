@@ -1,6 +1,5 @@
 import React from "react"
 import Me from "../assets/photoMe.png"
-import RatiemateLanding from "../assets/ratiemate-landing.png"
 
 const Work = () => {
     return(
