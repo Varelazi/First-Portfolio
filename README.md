@@ -57,3 +57,58 @@ function App() {
 
 ## Contaact Page
 - A page where the user can send me an email from a form on the page. 
+- Followed this video to help setup emailjs
+https://www.youtube.com/watch?v=NgWGllOjkbs
+- Install emailjs
+```bash
+$ npm install @emailjs/browser --save
+```
+- Setting up emailjs. 
+```js
+// Setup this:
+const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
+// Inside the function but before the return. Like this:
+import React from "react"
+
+const ContactMe = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
+    return(
+        <>
+            <div className="contact-container">
+
+            </div>
+        </>
+    )
+}
+
+export default ContactMe
+// Replace these:
+  emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+// With the correct information from the website. Ex:
+  emailjs.sendForm('service_zd7mdnj', 'template_4nh7zb4', form.current, 'DKRr8FnTUU6nMOtkQ')
+// Add this:
+  e.target.reset()
+// To the end of the .then statement
+```

@@ -230,7 +230,7 @@ html{
 
 .test-name, .test-name1{
   position: absolute;
-  top: 0;
+  top: 12px;
   padding: 5px;
 }
 
@@ -260,4 +260,62 @@ html{
   border: solid #FCD5CE;
 }
 
+/* CONTACT ME CSS */
+.contact-container{
+  border: solid;
+  height: 80vh;
+}
 
+.hello-box{
+  padding-top: 35px;
+}
+
+.contact-hello{
+  display: inline;
+  margin-left: 10%;
+  font-size: 45px;
+  margin-bottom: 10px;
+  font-family: "Pacifico", cursive;
+  color: #B3C6B9;
+}
+
+.contact-intro{
+  display: inline;
+  margin-left: 10%;
+  font-family: "Gruppo", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.form-container{
+  border: solid;
+  height: 50vh;
+  margin-top: 40px;
+}
+
+form{
+  border: solid;
+  width: 80%;
+  margin: auto;
+}
+
+.label-name{
+  font-family: "Gruppo", sans-serif;
+  font-size: 30px;
+  padding: 5px;
+}
+
+.input-name{
+  display: flex;
+  justify-content: space-between;
+}
+
+#input-first{
+  height: 30px;
+  width: 45%;
+}
+
+#input-last{
+  height: 30px;
+  width: 45%;
+}
