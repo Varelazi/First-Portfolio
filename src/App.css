@@ -179,6 +179,7 @@ html{
   font-family: "Pacifico", cursive;
   color: #B3C6B9;
   justify-content: center;
+  margin-top: 10px;
 }
 
 .skill-box{
@@ -240,7 +241,7 @@ html{
   padding: 20px;
 }
 
-.button{
+.button, #submit{
   text-decoration: none;
   color: black;
   font-size: 20px;
@@ -255,14 +256,13 @@ html{
   margin-right: 10px;
 }
 
-.button:hover{
+.button:hover, #submit:hover{
   background-color: transparent;
   border: solid #FCD5CE;
 }
 
 /* CONTACT ME CSS */
 .contact-container{
-  border: solid;
   height: 80vh;
 }
 
@@ -272,7 +272,7 @@ html{
 
 .contact-hello{
   display: inline;
-  margin-left: 10%;
+  margin-left: 15%;
   font-size: 45px;
   margin-bottom: 10px;
   font-family: "Pacifico", cursive;
@@ -281,25 +281,22 @@ html{
 
 .contact-intro{
   display: inline;
-  margin-left: 10%;
+  margin-left: 15%;
   font-family: "Gruppo", sans-serif;
   font-weight: 600;
   font-size: 20px;
 }
 
 .form-container{
-  border: solid;
-  height: 50vh;
   margin-top: 40px;
 }
 
 form{
-  border: solid;
-  width: 80%;
+  width: 70%;
   margin: auto;
 }
 
-.label-name{
+.label-name, .label-email, .label-message{
   font-family: "Gruppo", sans-serif;
   font-size: 30px;
   padding: 5px;
@@ -310,12 +307,34 @@ form{
   justify-content: space-between;
 }
 
-#input-first{
+#input-first, #input-last, #input-email{
   height: 30px;
-  width: 45%;
+  width: 48%;
 }
 
-#input-last{
-  height: 30px;
-  width: 45%;
+.form-email{
+  margin-top: 20px;
+}
+
+#input-email{
+  width: 100%;
+}
+
+.form-message{
+  margin-top: 20px;
+}
+
+#input-message{
+  height: 140px;
+  width: 100%;
+}
+
+.submit-button{
+  display: flex;
+  justify-content: center;
+}
+
+#submit{
+  border: transparent;
+  margin-top: 20px;
 }

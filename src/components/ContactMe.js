@@ -39,11 +39,21 @@ const ContactMe = () => {
                                 <input type="text" name="user_last" placeholder="Last" id="input-last"/>
                             </div>
                         </div>
-                        <label id="email-label">Email</label>
-                        <input type="email" name="user_email" id="box" />
-                        <label id="message-label">Message</label>
-                        <textarea name="message" id="box"/>
-                        <input type="submit" value="Send" id="submit"/>
+                        <div className="form-email">
+                            <div className="label-email">
+                                <label id="email-label">Email*</label>
+                            </div>
+                            <input type="email" name="user_email" placeholder="Email" id="input-email" />
+                        </div>
+                        <div className="form-message">
+                            <div className="label-message">
+                                <label id="message-label">Message*</label>
+                            </div>
+                            <textarea name="message" placeholder="Message" id="input-message"/>
+                        </div>
+                        <div className="submit-button">
+                            <input type="submit" value="Send" id="submit"/>
+                        </div>
                     </form>
                 </div>
             </div>
