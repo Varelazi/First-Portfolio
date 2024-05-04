@@ -1,5 +1,6 @@
 import React from "react"
 import Me from "../assets/photoMe.png"
+import RatieMate from "../assets/ratiemate.png"
 
 const Work = () => {
     return(
@@ -13,16 +14,35 @@ const Work = () => {
                     <img src={Me} alt="Ilene Varela-Zul" className="me"/>
                 </div>
             </div>
-            <div className="work1">
-                <div className="ratiemate-container">
-
+            <div className="holding-img-text">
+                <div className="work-container">
+                    <a href="https://frontend-ratiemate.onrender.com/" target="_blank" rel="noreferrer" className="ratiemate-link">
+                        <div className="project">
+                            <img src={RatieMate} alt="Ratie Mate website" className="ratiemate"/>
+                        </div>
+                        <div className="text-overlay">
+                            <div className="text-overlay-overlay">
+                                <div className="project-text">
+                                    <p className="project-title">Ratie Mate</p>
+                                    <p className="project-creator"> &copy; Roniel, Adrian, Tori, and Ilene</p>
+                                    <p className="project-desc">Join our vibrant community-driven movie rating platform. Explore and rate a diverse range of films, from Hollywood blockbusters to indie gems. Contribute your ratings, discover new favorites, and expand our database with overlooked titles. With seamless API integration, enjoy access to an extensive film library, enhancing your movie-watching experience.</p>
+                                    <div className="grid-container">
+                                        <div className="item">React</div>
+                                        <div className="item">Ruby on Rails</div>
+                                        <div className="item">UX/UI</div>
+                                        <div className="item">External API</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div> 
-            <div className="work2">
-                <div className="cookbook-container">
+            {/* <div className="work-container">
+                <div className="project">
 
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }
