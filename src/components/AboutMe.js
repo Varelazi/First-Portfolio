@@ -50,9 +50,9 @@ const AboutMe = () => {
             </div>
             <div className="testimonials">
                 <p className="test2">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum lacinia quis vel. Tortor at risus viverra adipiscing at. Id faucibus nisl tincidunt eget. Turpis massa sed elementum tempus. Semper auctor neque vitae tempus quam pellentesque nec. Netus et malesuada fames ac turpis egestas maecenas. 
+                    "Ilene is an invaluable asset to any team. Her talent for problem solving is outstanding, always finding elegant solutions to even the most daunting challenges. Working alongside her is not only a pleasure but also a guarantee of success. Ilene's dedication, creativity, and collaborative spirit make her an exceptional teammate and an indispensable part of any project."
                 </p>
-                <p className="test-name1">Vernon Hansol Chwe, Singer</p>
+                <p className="test-name1">Adrian Ramirez, Junior Frontend Web Developer</p>
             </div>
             <div className="bottom-buttons">
                 <a href="https://drive.google.com/file/d/1pnm6ebY4bPSFSmjU7p8K5XSGOA5L4pJd/view?usp=sharing" target="_blank" rel="noreferrer" className="button">
