@@ -26,7 +26,7 @@ const AboutMe = () => {
                         In my quest for meaningful employment, I am dedicated to channeling my skills and enthusiasm into crafting user experiences that are both effective and enjoyable.
                     </p>
                     <p className="text1">
-                        Beyond the realm of coding, I find solace and inspiration in various creative pursuits. Whether immersed in the latest gaming adventures, exploring the vibrant world of painting, indulging in the therapeutic act of coloring, or losing myself in captivating shows, I am constantly seeking new avenues for expression and enjoyment.
+                        Beyond the realm of coding, I find solace and inspiration in various creative pursuits. Whether immersed in the latest gaming adventures, exploring the vibrant world of painting, indulging in the therapeutic act of dancing, or losing myself in captivating music, I am constantly seeking new avenues for expression and enjoyment.
                     </p>
                 </div>
                 <img src={Me} alt="Ilene Varela-Zul" className="about-img"/>
